@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "Smartschool Ultra",
+  "version": "0.0.2",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "smartschool-ultra@example.com",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.smartschool.be/*",
+    "http://*.smartschool.be/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.smartschool.be/*",
+        "http://*.smartschool.be/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles/ssu/main.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "html/settings.html"
+      ],
+      "matches": [
+        "http://*.smartschool.be/*",
+        "https://*.smartschool.be/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
