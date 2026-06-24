@@ -33,7 +33,7 @@ textarea {
 }
 
 .modern-ui {
-    background-color: var(--medium-grey) !important;
+    background-color: var(--dark-grey) !important;
 }
 
 fieldset,
@@ -63,11 +63,6 @@ a:hover {
 span a:hover {
     text-decoration: none !important;
     color: var(--blue) !important;
-}
-
-a span:hover {
-    color: var(--blue) !important;
-    text-decoration: none !important;
 }
 
 .action__label {
@@ -129,7 +124,8 @@ button {
 }
 
 tr {
-    background-color: var(--medium-grey);
+    /* background-color: var(--medium-grey); */
+    background: none;
 }
 
 textarea {
@@ -140,15 +136,13 @@ input[type="checkbox"] {
     background: var(--medium-grey) !important;
 }
 
-.resize-handle {
-    background-image: url("https://svgshare.com/i/Rc_.svg") !important;
-}
-
 span:hover {
     text-decoration: none !important;
 }
 
 /*Login page*/
+
+/* todo change image */
 .login-app__left {
     display: block;
     background-image: url('https://www.smartschool.be/smsctip/2019-12_aanloop_kerst_smartschool_city_1440.jpg') !important;
@@ -202,6 +196,7 @@ a {
     display: none;
 }
 
+/* todo change image */
 .login-app__school-logo {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -263,6 +258,11 @@ a.smscButton span {
 }
 
 /*Start*/
+
+.topnav-menu-overlay {
+    z-index: 1;
+}
+
 .topnav {
     z-index: 1;
     position: relative;
@@ -273,7 +273,7 @@ a.smscButton span {
 }
 
 .topnav__menu-wrapper {
-    background-color: var(--medium-grey) !important;
+    background: none !important;
 }
 
 .profile-blocks.js-profile-blocks {
@@ -284,6 +284,7 @@ a.smscButton span {
     border-right: 1px solid var(--blue) !important;
 }
 
+/* todo change image */
 .module-news--24 {
     background-image: url("https://svgshare.com/i/RdB.svg") !important;
 }
@@ -380,16 +381,16 @@ homepage__center {
 }
 
 .datepicker__cell__content:hover {
-    background-color: #202225 !important;
+    background-color: var(--medium-grey) !important;
 }
 
 .datepicker__header td div:hover {
-    background-color: #2f3136 !important;
+    background-color: var(--medium-grey) !important;
 }
 
 .modern-ui .smsc-topnav .topnav,
 .smsc-topnav .topnav {
-    background: #202225 !important;
+    background: var(--dark-grey) !important;
 }
 
 .smsc-topnav .topnav__menu {
@@ -455,7 +456,8 @@ body.modern-ui .homepage__center {
 }
 
 .smscMain {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://www.dioni.co.uk/wp-content/uploads/2020/10/iStock-1055630404.jpg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://www.dioni.co.uk/wp-content/uploads/2020/10/iStock-1055630404.jpg"); */
+    /* we can set bg img here but not the color */
     height: 100% !important;
 }
 
@@ -466,6 +468,7 @@ body.modern-ui .homepage__center {
 span {
     color: white;
     text-decoration: none !important;
+    background: none !important;
 }
 
 .js-course-filters {
@@ -697,8 +700,8 @@ quickreply-menu {
 }
 
 #folders_parent_table tbody tr td div:nth-child(1) {
-    border: 1px solid white;
-    border-radius: 20px;
+    /* border: 1px solid white; */
+    /* border-radius: 20px; */
     background-color: var(--light-dark-grey) !important;
 }
 
@@ -813,7 +816,7 @@ quickreply-menu {
 }
 
 a.topnav__menuitem:hover {
-    background-color: #202225 !important;
+    background-color: var(--medium-grey) !important;
     border-color: #202225 !important;
     color: white !important;
 }
@@ -1064,6 +1067,7 @@ svg {
 
 .modern-message__actions {
     background-color: #2f3136 !important;
+    box-shadow: none !important;
 }
 
 .modern-message__action:hover {

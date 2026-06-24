@@ -55,27 +55,37 @@ function toggleStyling() {
     chrome.runtime.sendMessage({ action: "toggleStyling" });
 }
 
-function updateLink() {
+function addSettingsButton() {
+    if (document.querySelector('.ssu-settings-btn')) {
+        return true;
+    }
+
     const link = document.querySelector('a.js-btn-home.topnav__btn');
 
     if (!link) {
         return false;
     }
 
-    link.href = '#';
-    link.textContent = 'settings';
-    link.addEventListener('click', (event) => {
+    const settings = link.cloneNode(true);
+
+    settings.classList.add('ssu-settings-btn');
+    settings.href = '#';
+    settings.textContent = 'Settings';
+
+    settings.addEventListener('click', (event) => {
         event.preventDefault();
         openSettings();
     });
+
+    link.parentNode.insertBefore(settings, link);
 
     return true;
 }
 
 // Try immediately
-if (!updateLink()) {
+if (!addSettingsButton()) {
     const observer = new MutationObserver(() => {
-        if (updateLink()) {
+        if (addSettingsButton()) {
             observer.disconnect();
         }
     });
