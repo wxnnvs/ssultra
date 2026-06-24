@@ -1,23 +1,23 @@
 .ssu-settings {
-        border: 1px solid #ccc;
-        padding: 20px;
-        width: 300px;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        
-    }
+    border: 1px solid #333;
+    padding: 20px;
+    width: 300px;
+    background-color: #222;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
 
-    .ssu-settings::backdrop {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
+.ssu-settings::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
-    .ssu-button {
-        margin-top: 10px;
-        padding: 5px 10px;
-        border: none;
-        background-color: #007bff;
-        color: #fff;
-        border-radius: 3px;
-        cursor: pointer;
-    }
+.ssu-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
