@@ -3,7 +3,7 @@ A basic browser extension with QoL modifications for Smartschool.
 
 ---
 
-Built by [Wannes](https://wannesg.be) for the [Smartschool Ultra](https://discord.gg/7nDphk7BSc) project, inspired by [Smartschool++](https://smpp.be) and based off styling by Brecht Van Acker Voorspoels
+Built by [Wannes](https://wannesg.be) for the [Smartschool Ultra](https://discord.gg/7nDphk7BSc) project, inspired by [Smartschool++](https://smpp.be) and based on styling by Brecht Van Acker Voorspoels
 
 ---
 
