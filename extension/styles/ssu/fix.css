@@ -1759,3 +1759,16 @@ span {
 .user_row_image {
     border: 0 !important
 }
+
+.twinbutton__button:hover {
+    background-color: var(--light-dark-grey) !important
+}
+
+.datepicker, .arrow-U4LFP svg polyline {
+    background-color: var(--light-dark-grey) !important;
+    fill: var(--light-dark-grey) !important;
+}
+
+.date--selected {
+    background-color: var(--blue) !important
+}
