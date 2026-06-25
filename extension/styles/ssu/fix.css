@@ -1,4 +1,5 @@
 /* taken and adapted from https://userstyles.world/style/7713/the-darkschool-project */
+/* optimized by CSSO */
 
 :root {
     --green: #43b581;
@@ -9,171 +10,147 @@
     --light-dark-grey: #292c2e;
     --purple-blue: #5c87ff;
     --light-green: #67db4d;
-    --light-blue: #2a9df4;
+    --light-blue: #2a9df4
 }
 
 ::selection {
-    color: white !important;
-    background: var(--light-blue) !important;
+    color: #fff !important;
+    background: var(--light-blue) !important
+}
+
+body,
+textarea {
+    color: #fff !important
 }
 
 body {
-    font-family: sans-serif;
-    color: white !important;
-    background-color: var(--medium-grey) !important;
+    font-family: sans-serif
 }
 
 textarea {
-    color: white !important;
-    background-color: var(--medium-grey) !important;
+    padding: 5px !important
 }
 
-.flexwrap {
-    background-color: var(--medium-grey) !important;
+.flexwrap,
+.login-app .smscButton:hover,
+body,
+fieldset,
+legend,
+select,
+textarea,
+th {
+    background-color: var(--medium-grey) !important
 }
 
 .modern-ui {
-    background-color: var(--dark-grey) !important;
-}
-
-fieldset,
-legend,
-th {
-    background-color: var(--medium-grey) !important;
+    background-color: var(--dark-grey) !important
 }
 
 select {
-    background-color: var(--medium-grey) !important;
-    border: var(--medium-grey) !important;
+    border: var(--medium-grey) !important
 }
 
+.action__label,
+.topnav__menuitem--img span:hover,
 a,
-span,
-legend,
 button,
-select {
-    color: white !important;
+div a,
+input,
+input[type=password],
+input[type=search],
+input[type=text],
+input[type=textfield],
+legend,
+ol,
+select,
+ul {
+    color: #fff !important
 }
 
-a:hover {
-    color: var(--blue) !important;
-    text-decoration: none !important;
-}
-
+a:hover,
 span a:hover {
-    text-decoration: none !important;
-    color: var(--blue) !important;
+    text-decoration: none !important
 }
 
-.action__label {
-    color: white !important;
+.action__label:hover,
+.msgContent a,
+a:hover,
+span a:hover {
+    color: var(--blue) !important
 }
 
-.action__label:hover {
-    color: var(--blue) !important;
-}
-
-input[type="text"] {
-    color: white !important;
-}
-
-input[type="password"] {
-    color: white !important;
-}
-
-input[type="textfield"] {
-    color: white !important;
-}
-
-input[type="search"] {
-    color: white !important;
-    background-color: var(--medium-grey) !important;
+input[type=search] {
+    background-color: var(--medium-grey) !important
 }
 
 input {
-    color: white !important;
     border-radius: 3px !important;
-    padding-left: 5px !important;
+    padding-left: 5px !important
 }
 
 .smscselect {
-    background: #202225 !important;
-}
-
-div a {
-    color: white !important;
+    background: #202225 !important
 }
 
 div a:hover {
-    color: #7289da !important;
-    text-decoration: none !important;
-}
-
-ol,
-ul {
-    color: white !important;
+    color: #7289da !important
 }
 
 img {
-    pointer-events: none;
+    pointer-events: none
 }
 
-div,
-button {
-    text-shadow: none !important;
+button,
+div {
+    text-shadow: none !important
 }
 
 tr {
-    /* background-color: var(--medium-grey); */
-    background: none;
+    background: 0 0
 }
 
-textarea {
-    padding: 5px !important;
+input[type=checkbox] {
+    background: var(--medium-grey) !important
 }
 
-input[type="checkbox"] {
-    background: var(--medium-grey) !important;
-}
-
+div a:hover,
 span:hover {
-    text-decoration: none !important;
+    text-decoration: none !important
 }
 
-/*Login page*/
-
-/* todo change image */
 .login-app__left {
     display: block;
-    background-image: url('https://www.smartschool.be/smsctip/2019-12_aanloop_kerst_smartschool_city_1440.jpg') !important;
+    background-image: url(https://www.smartschool.be/smsctip/2019-12_aanloop_kerst_smartschool_city_1440.jpg) !important
 }
 
 .hero-image-- {
-    display: block !important;
+    display: block !important
 }
 
 .login-app__smartschool-app {
     background-color: #2f3136;
-    padding-bottom: 0px;
+    padding-bottom: 0
 }
 
 .login-app__title--separator {
-    color: #202225;
+    color: #202225
 }
 
-span,
-a {
-    color: white;
+.required span,
+a.smscButton span {
+    color: #fff
 }
+
+a {}
 
 .login-app__link--password {
-    color: black;
+    color: #000
 }
 
 .login-app__right {
     position: relative;
     margin: auto;
-    box-shadow: none !important;
+    box-shadow: none !important
 }
 
 .login-app__top {
@@ -183,464 +160,355 @@ a {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: center
 }
 
 .login-app__top::after {
-    color: #ff3333;
+    color: #f33;
     content: "STILL IN DEVELOPMENT";
-    white-space: pre-wrap;
+    white-space: pre-wrap
 }
 
-.login-app__bottom {
-    display: none;
+#centercontainer>div.homepage__block,
+.login-app__bottom,
+.login-app__title--sign-in-with.login-app__title {
+    display: none
 }
 
-/* todo change image */
 .login-app__school-logo {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
-    /* background-image: url("https://xinix.space/darkschool/logo.png") !important; */
-    margin: 0px 0px 30px 0px;
-}
-
-.login-app__title--sign-in-with.login-app__title {
-    display: none;
+    margin: 0 0 30px
 }
 
 .login-app .smscButton {
     background-color: #7289da !important;
-    border-color: #7289da !important;
+    border-color: #7289da !important
 }
 
-.login-app .smscButton:hover {
-    background-color: var(--medium-grey) !important;
-}
-
-.required span {
-    color: white;
-}
-
-a.smscButton span {
-    color: white;
-}
-
-.login-app__title--or {
-    color: white;
-}
-
-.login-app__link {
-    color: white;
-}
-
-.login-app__link:hover {
-    background-color: var(--medium-grey);
-}
-
-.login-app__smartschool-app:hover {
-    background-color: var(--medium-grey);
-}
-
+.login-app__link,
+.login-app__title--or,
 .modern-ui .float-label__input+label span {
-    color: white;
+    color: #fff
+}
+
+.login-app__link:hover,
+.login-app__smartschool-app:hover {
+    background-color: var(--medium-grey)
 }
 
 .login-app__platform-indicator {
     background-color: #2f3136;
-    margin-bottom: 16px;
+    margin-bottom: 16px
 }
 
 .dialog--alert.js-partner-logout-dialog.partner-logout-dialog.js-dialog-content.dialog-content {
     background-color: var(--medium-grey);
-    border: none;
-
+    border: 0
 }
 
-/*Start*/
-
 .topnav-menu-overlay {
-    z-index: 1 !important;
+    z-index: 1 !important
 }
 
 .topnav {
     z-index: 1;
-    position: relative;
+    position: relative
 }
 
-.topnav__menuitem--img span:hover {
-    color: white !important;
-}
-
+.empty-state__container,
+.js-course-name mark,
+.msgContentVal span,
+.showLeftNav,
+.smscMain table tr td,
 .topnav__menu-wrapper {
-    background: none !important;
+    background: 0 0 !important
 }
 
-.profile-blocks.js-profile-blocks {
-    display: none !important;
+.home__container__tab::after,
+.home__container__tab::before,
+.home__container__tabs::before,
+.profile-blocks.js-profile-blocks,
+.scoodle-kit__kit img {
+    display: none !important
 }
 
-.showLeftNav {
-    background: none !important;
-}
-
-.empty-state__container {
-    background: none !important;
+.course__block__title:hover,
+.smsc_cm_body_row_block_mime {
+    color: #fff !important
 }
 
 .course-ico {
-    border-right: 1px solid var(--blue) !important;
+    border-right: 1px solid var(--blue) !important
 }
 
-/* todo change image */
 .module-news--24 {
-    background-image: url("https://svgshare.com/i/RdB.svg") !important;
+    background-image: url(https://svgshare.com/i/RdB.svg) !important
 }
 
 .home__container__content__loading {
-    background-image: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") !important;
+    background-image: url(https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif) !important
 }
 
 .scoodle__container {
-    background: none;
+    background: 0 0
 }
 
 .home__container__tab {
     background: var(--blue) !important;
-    border-radius: 0px !important;
-    height: 100% !important;
-}
-
-.home__container__tab::before,
-.home__container__tab::after {
-    display: none !important;
+    border-radius: 0 !important;
+    height: 100% !important
 }
 
 .home__container__tab--active {
     background: var(--light-dark-grey) !important;
-    font-weight: normal !important;
-}
-
-.home__container__tabs::before {
-    display: none !important;
-}
-
-.course__block__title:hover {
-    color: white !important;
+    font-weight: 400 !important
 }
 
 .js-search-filter fieldset legend {
-    color: #67db4d !important;
+    color: #67db4d !important
 }
 
 #topnavSearchFilter {
-    background-color: #2f3136 !important;
-    color: white !important;
+    background-color: #2f3136 !important
 }
 
+.course__block__description,
+.course__block__description:hover,
+.js-course-descr,
+.js-course-descr:hover,
 .news__feed__button__content--name-date {
-    color: grey !important;
+    color: gray !important
 }
 
-.course__block__description {
-    color: grey !important;
-}
-
-.course__block__description:hover {
-    color: grey !important;
-}
-
-.js-course-descr {
-    color: grey !important;
-}
-
-.js-course-descr:hover {
-    color: grey !important;
-}
-
+#topnavSearchFilter,
 .course-link__name:hover {
-    color: white !important;
+    color: #fff !important
 }
 
-.js-course-name mark {
-    background: none !important;
+.homepage__block p a img:first-child,
+.newsDialog__center p a img:first-child {
+    display: none !important
 }
 
-.homepage__block p a img:first-child {
-    display: none !important;
-}
-
+.homepage__right,
 .smsc-container--main,
 homepage__center {
-    background-color: #2f3136;
-}
-
-.homepage__right {
-    background-color: #2f3136;
+    background-color: #2f3136
 }
 
 .ssLink {
-    color: white;
+    color: #fff
 }
 
 .ssLink:hover {
     color: #7289da;
-    text-decoration: none;
+    text-decoration: none
 }
 
-.datepicker__cell__content:hover {
-    background-color: var(--medium-grey) !important;
-}
-
-.datepicker__header td div:hover {
-    background-color: var(--medium-grey) !important;
+.datepicker__cell__content:hover,
+.datepicker__header td div:hover,
+.topnav__menu {
+    background-color: var(--medium-grey) !important
 }
 
 .modern-ui .smsc-topnav .topnav,
 .smsc-topnav .topnav {
-    background: var(--dark-grey) !important;
+    background: var(--dark-grey) !important
 }
 
 .smsc-topnav .topnav__menu {
     background-color: #2e3338;
-    border: 1px solid #2f3136;
-}
-
-.topnav__menu {
-    background-color: var(--medium-grey) !important;
+    border: 1px solid #2f3136
 }
 
 body.modern-ui .homepage__block:not(:last-child) {
-    border-bottom: 1px solid #202225;
+    border-bottom: 1px solid #202225
 }
 
 body.modern-ui .homepage__center {
     border-left: 1px solid #202225;
-    border-right: 1px solid #202225;
+    border-right: 1px solid #202225
 }
 
-.datepicker__navigation__label {
-    color: white;
-}
-
-.scoodle-kit__kit img {
-    display: none !important;
-}
-
+.datepicker__navigation__label,
 .topnav__badge {
-    color: white;
+    color: #fff
 }
 
 .smsc-topnav .topnav__badge {
-    background-color: #7289da;
+    background-color: #7289da
 }
 
 .smsc-title--1 {
-    color: white !important;
-    font-weight: bold !important;
+    color: #fff !important;
+    font-weight: 700 !important
 }
 
 .ui-widget-content {
     background: #202225;
-    border: none;
+    border: 0
 }
 
 .smscButton {
     background: #7289da !important;
     border-color: #7289da !important;
-    color: white !important;
+    color: #fff !important
 }
 
 .modern-ui .smscButton:hover:not([disabled]) {
-    background-color: #7289da;
+    background-color: #7289da
 }
 
+.topnav__menu-arrow::after,
 .topnav__menu-arrow::before {
-    border-color: #2f3136 transparent !important;
-}
-
-.topnav__menu-arrow::after {
-    border-color: #2f3136 transparent !important;
+    border-color: #2f3136 transparent !important
 }
 
 .smsc-contextmenu.position-bottom .smsc-contextmenu-arrow::after {
-    border-color: #2f3136 transparent;
+    border-color: #2f3136 transparent
 }
 
 .smscMain {
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://www.dioni.co.uk/wp-content/uploads/2020/10/iStock-1055630404.jpg"); */
-    /* we can set bg img here but not the color */
-    height: 100% !important;
-}
-
-.smscMain table tr td {
-    background: none !important;
+    height: 100% !important
 }
 
 span {
-    color: white;
     text-decoration: none !important;
-    background: none !important;
+    background: 0 0 !important
 }
 
 .js-course-filters {
-    background-color: #2f3136;
+    background-color: #2f3136
 }
 
 .smsc-contextmenu-bubble {
     background-color: #2f3136 !important;
-    border-color: #2f3136 !important;
+    border-color: #2f3136 !important
 }
 
+.menu-type.menu-linkbutton.smsc-linkbutton.smsc-linkbutton--icon.smsc-linkbutton--svg.smsc-linkbutton--24:hover,
 a.menu-type:hover {
     color: #7289da !important;
-    background-color: #2f3136 !important;
+    background-color: #2f3136 !important
 }
 
 .course-ico {
-    background-color: #7289da !important;
+    background-color: #7289da !important
 }
 
 .course-btnbar {
-    border: #7289da solid !important;
+    border: #7289da solid !important
 }
 
+.datepicker--pointer,
 .topnav__menu__title {
-    color: white !important;
-}
-
-.datepicker--pointer {
-    color: white !important;
+    color: #fff !important
 }
 
 a.course__block.course__image:hover {
     background-color: #202225 !important;
-    border-color: #202225 !important;
-}
-
-.menu-type.menu-linkbutton.smsc-linkbutton.smsc-linkbutton--icon.smsc-linkbutton--svg.smsc-linkbutton--24:hover {
-    color: #7289da !important;
-    background-color: #2f3136 !important;
+    border-color: #202225 !important
 }
 
 .msg_button {
-    color: white;
+    color: #fff
 }
 
+.msgContentVal a,
 .msg_button:hover {
-    color: #7289da;
+    color: #7289da
 }
 
 .send-button {
-    background-color: #7289da !important;
+    background-color: #7289da !important
 }
 
 .toolbarright {
-    background-color: #2f3136;
+    background-color: #2f3136
 }
 
+.messages__tree__add-button,
 .postbox_link {
-    color: white;
+    color: #fff
 }
 
 .postbox_link:hover {
-    color: #7289da !important;
-}
-
-.messages__tree__add-button {
-    color: white;
+    color: #7289da !important
 }
 
 .messages__tree__add-button:hover {
     color: #7289da !important;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .messageframe {
-    background-color: #2f3136;
+    background-color: #2f3136
 }
 
 .postbox_line {
     margin: 1.333rem 0;
-    border-bottom: solid 1.5px #202225;
+    border-bottom: solid 1.5px #202225
 }
 
 .sortlist__button {
     background-color: #7289da !important;
-    border-color: #7289da !important;
+    border-color: #7289da !important
 }
 
 .modern-ui .modern-message--selected,
-.modern-ui .modern-message--selected:hover {
-    background-color: #202225;
+.modern-ui .modern-message--selected:hover,
+.smsc-dropzone--init {
+    background-color: #202225
 }
 
+.course-link.hlp-vert-box:hover,
 .modern-message:hover {
-    background-color: #202225 !important;
+    background-color: #202225 !important
 }
 
 .course-link.hlp-vert-box:hover {
-    background-color: #202225 !important;
-    border-color: #202225;
-}
-
-.smsc-dropzone--init {
-    background-color: #202225;
+    border-color: #202225
 }
 
 .smsc-container--grey {
-    background-color: #292c2e !important;
+    background-color: #292c2e !important
 }
 
-.smsc-tree__item__title {
-    color: white !important;
+.news__feed__button__content--title,
+.smsc-table__sortable,
+.smsc-tree__item__title,
+.topnav__btn {
+    color: #fff !important
 }
 
 .smsc-tree__item__title:hover {
-    color: #7289da !important;
+    color: #7289da !important
 }
 
 .smsc-table__header.js-table-hdr {
-    background-color: #2f3136;
-}
-
-.smsc-table__sortable {
-    color: white !important;
+    background-color: #2f3136
 }
 
 .menu-linkbutton:hover {
-    background-color: #202225 !important;
+    background-color: #202225 !important
 }
 
-.newsDialog__center p a img:first-child {
-    display: none !important;
-}
-
-.news__feed__button__content--title {
-    color: white !important;
-}
-
+.mce-content-body div,
+.msgContentVal div,
 .news__feed__button__content--title:hover {
-    color: #7289da !important;
-}
-
-.topnav__btn {
-    color: white !important;
+    color: #7289da !important
 }
 
 .topnav__btn:hover {
-    color: white !important;
+    color: #fff !important
 }
 
 .home__container__tab--active.home__container__tab.scoodle__tab--kits {
-    border: none;
+    border: 0
 }
 
-#centercontainer>div.homepage__block {
-    display: none;
-}
-
-/* todo change image */
 #centercontainer::after {
     padding: 220px 250px;
     margin: 0;
@@ -650,1407 +518,1156 @@ a.course__block.course__image:hover {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    /* content: url('https://xinix.space/assets/logo_nobg.png'); */
-    white-space: pre-wrap;
+    white-space: pre-wrap
 }
 
-.homepage__center.smsc-container--main {
-    background: none;
-}
-
+#homeAgenda>div.datepicker,
+.homepage__center.smsc-container--main,
 .homepage__right.smsc-container--right {
-    background: none;
+    background: 0 0
 }
 
-#homeAgenda>div.datepicker {
-    background: none;
-}
-
-/*messages*/
 .searchInputField,
-.subjectInput {
-    background-color: var(--medium-grey) !important;
+.subjectInput,
+quickreply-menu {
+    background-color: var(--medium-grey) !important
 }
 
 .tox-tbtn__select-label:hover {
-    cursor: pointer !important;
+    cursor: pointer !important
 }
 
 .mbselected {
-    background-image: none !important;
-}
-
-quickreply-menu {
-    background-color: var(--medium-grey) !important;
+    background-image: none !important
 }
 
 .tox-toolbar__primary {
-    background-color: var(--medium-grey) !important;
+    background-color: var(--medium-grey) !important
 }
 
+.quickReplyMenu__arrow::after,
 .quickReplyMenu__arrow::before {
-    border-color: transparent var(--medium-grey) !important;
+    border-color: transparent var(--medium-grey) !important
 }
 
-.quickReplyMenu__arrow::after {
-    border-color: transparent var(--medium-grey) !important;
-}
-
+#folders_parent_td,
 .folders {
-    background-color: var(--light-dark-grey) !important;
+    background-color: var(--dark-grey) !important
 }
 
 .helper--height--mega {
-    background-color: var(--light-dark-grey) !important;
-}
-
-#folders_parent_td {
-    background-color: var(--light-dark-grey) !important;
-}
-
-.helper--height--mega {
-    background-color: var(--lightgrey) !important;
+    background-color: var(--light-grey) !important
 }
 
 #folders_parent_table tbody tr td div:nth-child(1) {
-    /* border: 1px solid white; */
-    /* border-radius: 20px; */
-    background-color: var(--light-dark-grey) !important;
+    background-color: var(--dark-grey) !important
 }
 
+.tox-collection__group,
 .tox-selected-menu {
-    background-color: #2f3136 !important;
+    background-color: #2f3136 !important
 }
 
-.tox-collection__group {
-    background-color: #2f3136 !important;
-}
-
-.tox-collection__item--active {
-    background-color: #202225 !important;
-}
-
+.tox-collection__item--active,
 .tox-mbtn--active {
-    background-color: #202225 !important;
+    background-color: #202225 !important
 }
 
+.composeUsers--max-height-limited.ui-droppable:hover,
+.smartfolderrules_text select,
+.smsc-table__row:hover,
 .tox-collection__item--enabled {
-    background-color: #2f3136 !important;
+    background-color: #2f3136 !important
 }
 
-.tox-collection__item-accessory {
-    color: white !important;
-}
-
+.tox-collection__item-accessory,
 .tox-collection__item-label {
-    color: white !important;
-}
-
-.composeUsers--max-height-limited.ui-droppable:hover {
-    background-color: #2f3136 !important;
+    color: #fff !important
 }
 
 .smsc-table__row {
-    background-color: var(--medium-grey) !important;
-}
-
-.smsc-table__row:hover {
-    background-color: #2f3136 !important;
-}
-
-.smartfolderrules_text select {
-    background-color: #2f3136 !important;
+    background-color: var(--medium-grey) !important
 }
 
 .msgContent * {
     background: #2f3136 !important;
-    color: white !important;
-}
-
-.msgContent a {
-    color: var(--blue) !important;
+    color: #fff !important
 }
 
 .msgHeader {
-    border-bottom: #202225 1px solid !important;
-}
-
-.msgContentVal div {
-    color: #7289da !important;
-}
-
-.msgContentVal span {
-    background: none !important;
+    border-bottom: #202225 1px solid !important
 }
 
 .attachment:hover {
-    background-color: #202225;
+    background-color: #202225
 }
 
 .attachment__title__label {
-    color: white !important;
+    color: #fff !important
 }
 
 .topnav__menuitem.topnav__menuitem--icon {
-    color: white;
+    color: #fff
 }
 
+#contextMenu,
 .notifs-toaster__toast.modern-ui {
     background-color: #2f3136;
-    border-color: #2f3136;
+    border-color: #2f3136
 }
 
-.notification:hover {
-    background-color: #202225 !important;
+.notification:hover,
+.smsc-select-option.item:hover,
+.tox-mbtn.tox-mbtn--select:hover {
+    background-color: #202225 !important
 }
 
 .ui-dialog-content.ui-widget-content {
-    color: white;
+    color: #fff
 }
 
-.coursesbutton {
-    background-color: #7289da !important;
-    border-color: #7289da !important;
-}
-
+.coursesbutton,
 .js-notifs-settingsbtn {
     background-color: #7289da !important;
-    border-color: #7289da !important;
+    border-color: #7289da !important
 }
 
 .js-notifs-clearbtn {
     background-color: #f04747 !important;
-    border-color: #f04747 !important;
-}
-
-#contextMenu {
-    background-color: #2f3136;
-    border-color: #2f3136;
+    border-color: #f04747 !important
 }
 
 a.topnav__menuitem:hover {
     background-color: var(--darkest-grey) !important;
     border-color: #202225 !important;
-    color: white !important;
+    color: #fff !important
 }
 
+.tooltip__arrow,
 .tooltip__content {
-    display: none !important;
-}
-
-.tooltip__arrow {
-    display: none !important;
-}
-
-.msgContentVal a {
-    color: #7289da;
+    display: none !important
 }
 
 .userNotRead {
-    color: #f04747;
+    color: #f04747
 }
 
 .menu-type {
-    color: white !important;
-    text-decoration: none !important;
+    color: #fff !important;
+    text-decoration: none !important
 }
 
 .menu-item:hover {
     background-color: var(--medium-grey) !important;
-    color: var(--blue) !important;
+    color: var(--blue) !important
 }
 
 .trans-layer {
     background-color: #2f3136;
-    opacity: 0.5;
+    opacity: .5
 }
 
-.smsc-select-option.item:hover {
-    background-color: #202225 !important;
-}
-
-.messageSearchPopup .ui-draggable {
-    background-color: #2f3136 !important;
+.messageSearchPopup .ui-draggable,
+.smsc-select-bubble {
+    background-color: #2f3136 !important
 }
 
 .smsc-select-bubble {
-    background-color: #2f3136 !important;
-    border-color: #2f3136 !important;
+    border-color: #2f3136 !important
 }
 
 .smsc-select {
-    color: white;
+    color: #fff
 }
 
 .smsc-select::before {
-    background-color: #7289da !important;
+    background-color: #7289da !important
 }
 
 .ui-dialog-titlebar {
     background-color: #2f3136;
-    border-color: #2f3136;
+    border-color: #2f3136
 }
 
 #smscSelectPanel_search_on_select>div:nth-child(1)::after {
-    border-color: #2f3136 transparent;
+    border-color: #2f3136 transparent
 }
 
+.message-search__select .smsc-select,
+.message-search__wrapper,
 .ui-dialog {
-    background-color: #2f3136;
-}
-
-.message-search__wrapper {
-    background-color: #2f3136;
-}
-
-.message-search__select .smsc-select {
-    background-color: #2f3136;
+    background-color: #2f3136
 }
 
 .message-search__button {
-    background-color: #7289da !important;
+    background-color: #7289da !important
 }
 
-.smsc-topnav [data-notifs] .notifs__hdr [role="switch"] .switch-values::after {
-    background-color: #67db4d;
+.smsc-topnav [data-notifs] .notifs__hdr [role=switch] .switch-values::after {
+    background-color: #67db4d
 }
 
-.smsc-topnav [data-notifs] .notifs__hdr [role="switch"][aria-checked="false"] .switch-values::after {
-    background-color: #f04747;
+.smsc-topnav [data-notifs] .notifs__hdr [role=switch][aria-checked=false] .switch-values::after {
+    background-color: #f04747
 }
 
 .smsc-topnav [data-notifs] .notifs__list:empty::after {
-    color: white;
+    color: #fff
 }
 
 .js-courses-list {
-    background-image: none !important;
+    background-image: none !important
 }
 
+.modern-message__name,
 .msgHeaderVal--sender {
-    color: #5c87ff !important;
-}
-
-.modern-message__name {
-    color: #5c87ff !important;
+    color: #5c87ff !important
 }
 
 .tox-menubar {
-    background-color: #2f3136 !important;
-}
-
-.tox-mbtn.tox-mbtn--select:hover {
-    background-color: #202225 !important;
+    background-color: #2f3136 !important
 }
 
 .tox-mbtn__select-label {
-    color: white !important;
+    color: #fff !important
 }
 
 .tox-mbtn__select-label:hover {
-    cursor: pointer;
+    cursor: pointer
 }
 
 .tox-split-button:hover {
     border-color: #202225 !important;
-    cursor: pointer;
+    cursor: pointer
 }
 
+.compose_subject,
+.ui-droppable {
+    background-color: #2f3136 !important
+}
+
+.tox-mbtn--select:hover,
 .tox-tbtn:hover {
-    cursor: pointer !important;
-}
-
-.tox-tbtn--bespoke:hover {
-    background-color: #2f3136 !important;
-}
-
-.tox-mbtn--select:hover {
-    cursor: pointer !important;
+    cursor: pointer !important
 }
 
 .tox-split-button__chevron:hover {
-    border-color: #202225 !important;
-}
-
-.ui-droppable {
-    background-color: #2f3136 !important;
-}
-
-.compose_subject {
-    background-color: #2f3136 !important;
+    border-color: #202225 !important
 }
 
 .searchDivContent {
-    background-color: #2f3136;
+    background-color: #2f3136
 }
 
+.searchDivResult.selected,
 .searchDivResult:hover {
-    background-color: #7289da;
+    background-color: #7289da
 }
 
-.searchDivResult.selected {
-    background-color: #7289da;
-}
-
-.selected {
-    background-color: var(--darkest-grey) !important;
-}
-
+.selected,
 .smsc-inlineeditor__span--disabled:hover {
-    background-color: var(--darkest-grey) !important;
+    background-color: var(--darkest-grey) !important
 }
 
 .mce-content-body {
-    background-color: #2f3136;
-}
-
-.mce-content-body div {
-    color: #7289da !important;
+    background-color: #2f3136
 }
 
 .tox-tbtn--bespoke:hover {
-    background-color: #202225 !important;
+    background-color: #202225 !important
 }
 
 .smsc-contextmenu-arrow::after {
-    border-color: #2f3136 transparent !important;
+    border-color: #2f3136 transparent !important
 }
 
 .smsc-table__header {
-    background: #2f3136 !important;
+    background: #2f3136 !important
 }
 
-.tox-tbtn.tox-tbtn--select {
-    color: white;
-}
-
+.tox-tbtn.tox-tbtn--select,
 .tox-tbtn.tox-tbtn--select:hover {
-    color: white;
+    color: #fff
 }
 
 .tox-toolbar__group.tox-tbtn:hover {
-    background-color: #202225;
+    background-color: #202225
 }
 
 .tox-toolbar {
-    background-color: #2f3136 !important;
+    background-color: #2f3136 !important
 }
 
+.menu-divider::before,
 .tox-tbtn:hover {
-    background-color: #202225 !important;
+    background-color: #202225 !important
 }
 
 .tox-icon.tox-tbtn__icon-wrapsvg span,
 svg {
-    fill: white !important;
+    fill: #fff !important
 }
 
 .tox-statusbar {
-    background-color: #2f3136 !important;
-    border-top: none !important;
+    border-top: none !important
 }
 
-.tabmain {
-    background-color: #2f3136 !important;
+.tabmain,
+.tox-statusbar {
+    background-color: #2f3136 !important
 }
 
 .js-focus-visible.modern-ui {
     background-color: #2f3136;
-    box-shadow: none !important;
+    box-shadow: none !important
 }
 
 .focus-visible {
-    box-shadow: none !important;
+    box-shadow: none !important
 }
 
-.add-btn {
-    color: white !important;
-}
-
-.add-btn:hover {
-    color: #7289da !important;
-}
-
+.add-btn,
 .smsc-treeitem__label {
-    color: white !important;
+    color: #fff !important
 }
 
+.add-btn:hover,
 .smsc-treeitem__label:hover {
-    color: #7289da !important;
+    color: #7289da !important
 }
 
+.modern-message__actions,
 .smsc-tabslist__item {
-    background-color: #2f3136 !important;
+    background-color: #2f3136 !important
 }
 
 .modern-message__actions {
-    background-color: #2f3136 !important;
-    box-shadow: none !important;
+    box-shadow: none !important
 }
 
 .modern-message__action:hover {
     background-color: #202225 !important;
-    border-color: #202225 !important;
+    border-color: #202225 !important
 }
 
 .ui-helper-clearfix {
-    background-color: #2f3136;
+    background-color: #2f3136
 }
 
 .ui-dialog {
-    border-color: #2f3136 !important;
-}
-
-.menu-divider::before {
-    background-color: #202225 !important;
+    border-color: #2f3136 !important
 }
 
 .smscFrameTitle {
-    color: white !important;
+    color: #fff !important;
     padding: 0 !important;
     background: #2f3136 !important;
-    border: 0 !important;
-    border-radius: 0 !important;
     box-shadow: none !important;
-    font-size: 15px !important;
+    font-size: 15px !important
 }
 
-.cf {
+.cf,
+.smscFrameTitle {
     border-radius: 0 !important;
-    border: 0 !important;
+    border: 0 !important
 }
 
 .margin-top--milli {
     background-color: #2f3136 !important;
-    box-shadow: none !important;
+    box-shadow: none !important
 }
 
+.nav a:hover,
 .smscAdminNav_body_linkdivTitle:hover {
     color: #7289da !important;
-    text-decoration: none !important;
+    text-decoration: none !important
 }
 
 .smscAdminNav_body_linkdivText {
-    color: white;
+    color: #fff
 }
 
 .modern-ui {
-    background-color: #2f3136;
+    background-color: #2f3136
 }
 
+#loadingLayer img,
 #msglist p img {
     display: block;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: url("https://i.ibb.co/1Z9BXm0/Rolling-1s-52px.gif") no-repeat;
     width: 52px;
     height: 52px;
-    padding-left: 52px;
+    padding-left: 52px
 }
 
+#msglist p img {
+    background: url(https://i.ibb.co/1Z9BXm0/Rolling-1s-52px.gif)no-repeat
+}
 
 .modern-message--selected {
-    background-color: var(--darkest-grey) !important;
+    background-color: var(--darkest-grey) !important
 }
 
 #loadingLayer img {
-    display: block;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") no-repeat;
-    width: 52px;
-    height: 52px;
-    padding-left: 52px;
+    background: url(https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif)no-repeat
 }
 
 .news--loading {
-    background-image: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") !important;
-    height: 54px !important;
+    background-image: url(https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif) !important;
+    height: 54px !important
 }
 
-.ssLinkBlue {
-    text-decoration: none;
-    color: #7289da;
-}
-
+.ssLinkBlue,
 .ssLinkBlue:hover {
     text-decoration: none;
-    color: #7289da;
+    color: #7289da
 }
 
-button.ui-button {
-    background-color: #f04747;
-    border-color: #f04747;
-}
-
+button.ui-button,
 button.ui-button:hover {
     background-color: #f04747;
-    border-color: #f04747;
+    border-color: #f04747
 }
 
 .smscButton.blue {
-    background-color: #7289da !important;
+    background-color: #7289da !important
 }
 
 .draftSaved {
-    background-image: none !important;
+    background-image: none !important
 }
 
 .tox .tox-menubar+.tox-toolbar,
 .tox .tox-menubar+.tox-toolbar-overlord .tox-toolbar__primary {
-    border-top: 1px solid white;
-    margin-top: -1px;
+    border-top: 1px solid #fff;
+    margin-top: -1px
 }
 
 .forum-row {
-    background-color: #2f3136;
-    color: white;
+    color: #fff
 }
 
+.forum-row,
 .forum-row:hover {
-    background-color: #2f3136;
+    background-color: #2f3136
 }
 
 .forum-link {
-    color: white !important;
+    color: #fff !important
 }
 
-.forum-link:hover {
-    color: #7289da !important;
+.forum-link:hover,
+.teacher a {
+    color: #7289da !important
 }
 
 .category-hdr {
     background: var(--darkest-grey) !important;
-    font-weight: normal !important;
-    text-shadow: none !important;
+    font-weight: 400 !important;
+    text-shadow: none !important
 }
 
 .js-listview-actionbtn {
-    background-color: #202225 !important;
+    background-color: #202225 !important
 }
 
 [listview] .listview__row:hover:not(.listview__row--selected) .listview__cell:not(.listview__cell--select-btn) {
     background-color: #202225;
-    color: #7289da;
+    color: #7289da
 }
 
 .listview__cell-button {
-    text-decoration: none !important;
+    text-decoration: none !important
 }
 
 smsc-listview .smsc-table__header tr:hover td:not(.cb-container),
 smsc-listview table tr:hover td:not(.cb-container) {
-    background-color: #202225;
+    background-color: #202225
 }
 
 .loading--x-large {
-    background: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") no-repeat;
-    background-position: center;
+    background: url(https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif)no-repeat;
+    background-position: center
 }
 
 .action-button {
     display: flex !important;
     background-color: #202225 !important;
-    justify-content: center !important;
+    justify-content: center !important
 }
 
 .smsc-linkbutton {
-    color: white;
+    color: #fff
 }
 
+.category a:hover,
 .smsc-linkbutton:hover {
     color: #7289da;
-    text-decoration: none;
+    text-decoration: none
 }
 
+.pupilInfo_popup,
 .smsc-contextmenu__content {
-    background-color: #2f3136 !important;
+    background-color: #2f3136 !important
 }
 
 .contextmenu__item.smsc-svg:hover {
     background-color: #202225 !important;
-    border-color: #202225 !important;
+    border-color: #202225 !important
 }
 
 .smsc-contextmenu__arrow--position-right::after {
-    border-color: transparent #2f3136 !important;
+    border-color: transparent #2f3136 !important
 }
 
-/*Leerlingvolgsysteem*/
 #leftLVStitle {
-    color: white !important;
-    font-weight: bold !important;
-    font-size: 15px !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    font-size: 15px !important
 }
 
 .pupilInfo_popup {
-    background-color: #2f3136 !important;
-    border-color: #2f3136 !important;
+    border-color: #2f3136 !important
 }
 
-.teacher a {
-    color: #7289da !important;
+.content_container,
+.navigation_container {
+    border: 1px solid #fff !important
 }
 
 .content_container,
 .navigation_container,
 .toolbar {
-    background-color: var(--medium-grey) !important;
-    border: 1px solid white !important;
+    background-color: var(--medium-grey) !important
 }
 
 .toolbarright {
-    border: none !important;
+    border: 0 !important
 }
 
 .contentFrametitle {
     background: #2f3136;
-    border: none;
-    box-shadow: none;
+    border: 0;
+    box-shadow: none
 }
 
 .contentFrametitle span {
-    color: #67db4d;
+    color: #67db4d
 }
 
 .itemSchoolyear {
-    color: white;
+    color: #fff
 }
 
 .green {
-    background: #43b581 !important;
+    background: #43b581 !important
 }
 
 .loading {
-    background: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") no-repeat !important;
+    background: url(https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif)no-repeat !important;
     min-width: 16px !important;
     min-height: 16px !important;
-    margin-right: 10px !important;
+    margin-right: 10px !important
 }
 
 .highcharts-background {
-    fill: #2f3136;
+    fill: #2f3136
 }
 
 #mod_nav_center {
-    background-color: #2f3136;
+    background-color: #2f3136
 }
 
 .last a {
-    color: white !important;
+    color: #fff !important
 }
 
 .contentLoader {
-    background: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") no-repeat;
-    background-position: center;
+    background: url(https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif)no-repeat;
+    background-position: center
 }
 
 .course__block--loading {
-    background: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") no-repeat !important;
+    background: url(https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif)no-repeat !important;
     background-position: center !important;
-    height: 54px !important;
+    height: 54px !important
 }
 
+.momentInfoContent p img,
 .toolbarLoader {
-    display: none !important;
+    display: none !important
 }
 
-.ltr {
-    color: white !important;
+.ltr,
+.padding5.bold {
+    color: #fff !important
 }
 
 a.clicked {
-    color: #7289da !important;
+    color: #7289da !important
 }
 
 .toolbar {
-    background-color: #2f3136;
+    background-color: #2f3136
 }
 
 .lvs_item_top {
     background: var(--darkest-grey) !important;
-    border-color: var(--darkest-grey) !important;
-}
-
-.padding5.bold {
-    color: white !important;
+    border-color: var(--darkest-grey) !important
 }
 
 .personalSettings_content {
     background-color: #2f3136;
-    border: none;
+    border: 0
 }
 
+.tabs li,
 .tabs li.current {
-    background: #2f3136;
+    background: #2f3136
 }
 
-.tabs .current span {
-    background: none !important;
-}
-
-.tabs li {
-    background: #2f3136;
-}
-
-.tabs span {
-    background: none;
+.tabs span,
+.uploadzone.margin-top--milli tbody tr td {
+    background: 0 0
 }
 
 .tabContent {
-    border: none;
+    border: 0
 }
 
 .pupil_nav_pupilinfo:hover {
-    color: #7289da;
+    color: #7289da
 }
 
 .lvs-pupilpresences-row:hover {
-    background: #2f3136 !important;
+    background: #2f3136 !important
 }
 
 .search_notes_schoolyearrow {
-    color: white !important;
+    color: #fff !important
 }
 
 .search_notes_itemrow:hover {
-    cursor: default !important;
+    cursor: default !important
 }
 
 .voormiddag {
-    color: grey;
+    color: gray
 }
 
 .pointer:hover {
     text-decoration: none !important;
-    background: #202225 !important;
+    background: #202225 !important
 }
 
 .smsc-rightclick__menu {
-    background-color: #2f3136 !important;
+    background-color: #2f3136 !important
 }
 
 .smsc-inlineeditor__editor:hover {
     color: #7289da;
-    text-decoration: none !important;
+    text-decoration: none !important
 }
 
 .smsc-rightclick__link:hover {
-    color: #7289da !important;
+    color: #7289da !important
 }
 
 .smsc-linkbutton--16:hover {
-    background-color: #2f3136 !important;
+    background-color: #2f3136 !important
 }
 
 .js-listview-link {
-    color: white !important;
+    color: #fff !important
 }
 
 .js-listview-link:hover {
-    color: #7289da !important;
+    color: #7289da !important
 }
 
 .smsc-dialog {
-    background-color: var(--medium-grey) !important;
+    background-color: var(--medium-grey) !important
 }
 
-/*agenda*/
 .momentInfoClose {
-    background-image: url("https://svgshare.com/i/Rdf.svg") !important;
-    /*white*/
+    background-image: url(https://svgshare.com/i/Rdf.svg) !important
 }
 
 .momentInfoClose:hover {
-    background-image: url("https://svgshare.com/i/Re7.svg") !important;
-    /*red*/
+    background-image: url(https://svgshare.com/i/Re7.svg) !important
 }
 
 .wborder {
-    background: var(--darkest-grey) !important;
-}
-
-.lessonFormTitleContainer {
-    color: white !important;
+    background: var(--darkest-grey) !important
 }
 
 #infoContainerSubjectTab .current span {
-    border-top: 3px solid white;
+    border-top: 3px solid #fff
 }
 
+.momentInfo.dl,
 .momentInfo.dr,
-.momentInfo.ur,
 .momentInfo.ul,
-.momentInfo.dl {
+.momentInfo.ur {
     background: var(--darkest-grey) !important;
-    border-radius: 12px;
+    border-radius: 12px
 }
 
-.ui-state-default {
-    background-color: var(--medium-grey) !important;
-}
-
+.lessonFormTitleContainer,
 .ui-state-default.ui-state-hover {
-    color: white !important;
+    color: #fff !important
 }
 
-.ui-icon-circle-triangle-w:hover {
-    background-color: var(--medium-grey) !important;
-}
-
-.momentInfoContent p img {
-    display: none !important;
+.ui-icon-circle-triangle-w:hover,
+.ui-state-default {
+    background-color: var(--medium-grey) !important
 }
 
 .tasksAndMaterials__loading {
-    background-image: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") !important;
+    background-image: url(https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif) !important;
     min-width: 52px !important;
-    min-height: 52px !important;
+    min-height: 52px !important
 }
 
 .agendaGridBlockContentRightButton {
-    background-size: 14px;
+    background-size: 14px
 }
 
 .gridBlock {
-    border-color: white !important;
-    background: none !important;
+    border-color: #fff !important;
+    background: 0 0 !important
 }
 
 .gridBlockContentNoIco {
-    display: none;
+    display: none
 }
 
 .gridBlockContentBothStartStatus {
-    background-image: url("https://svgur.com/i/RcV.svg") !important;
-    /*green*/
+    background-image: url(https://svgur.com/i/RcV.svg) !important
 }
 
 .gridBlockContentAssignmentEndStatus {
-    background-image: url("https://svgshare.com/i/Rak.svg") !important;
-    /*yellow*/
+    background-image: url(https://svgshare.com/i/Rak.svg) !important
 }
 
 .gridBlockContentTestEndStatus {
-    background-image: url("https://svgshare.com/i/RbG.svg") !important;
-    /*red*/
+    background-image: url(https://svgshare.com/i/RbG.svg) !important
 }
 
-.studentStartmoment {
-    background-image: url("https://svgur.com/i/RcV.svg") !important;
-    /*green*/
-    background-size: 16px !important;
+.studentStartmoment,
+.studentTest {
+    background-image: url(https://svgur.com/i/RcV.svg) !important;
+    background-size: 16px !important
 }
 
 .studentTest {
-    background-image: url("https://svgshare.com/i/RbG.svg") !important;
-    /*red*/
-    background-size: 16px !important;
+    background-image: url(https://svgshare.com/i/RbG.svg) !important
 }
 
 .infoContainerBlock {
-    background-image: url("https://svgshare.com/i/Rak.svg");
-    /*yellow*/
-    background-size: 16px !important;
+    background-image: url(https://svgshare.com/i/Rak.svg);
+    background-size: 16px !important
 }
 
 .gridBlockContentNoteStatusYes {
-    background-color: var(--light-blue) !important;
+    background-color: var(--light-blue) !important
 }
 
+.infoContainer,
 .infoContainerBlock {
-    background-color: var(--medium-grey) !important;
+    background-color: var(--medium-grey) !important
 }
 
 .infoContainer {
-    color: white !important;
-    background-color: var(--medium-grey) !important;
+    color: #fff !important
 }
 
 .smsclayerloading {
-    background-image: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") !important;
+    background-image: url(https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif) !important;
     height: 52px !important;
-    width: 52px !important;
+    width: 52px !important
 }
 
 .tasksAndMaterials__label:hover {
-    text-decoration: none !important;
+    text-decoration: none !important
 }
 
 .color_snow_white {
-    background-color: var(--light-dark-grey) !important;
+    background-color: var(--light-dark-grey) !important
 }
 
 .gridBlockContent {
-    background-color: var(--medium-grey) !important;
+    background-color: var(--medium-grey) !important
 }
 
 .agenda_grid_day_column div {
-    border-radius: 4px !important;
+    border-radius: 4px !important
 }
 
 .agendaGridBlockContentLeft {
-    color: white !important;
+    color: #fff !important
 }
 
 .hasDatepicker:hover {
-    color: var(--blue) !important;
+    color: var(--blue) !important
 }
 
 .navTitle {
-    color: white !important;
-    font-weight: bold !important;
+    font-weight: 700 !important
 }
 
-.border.centerxy {
-    background-color: #2f3136 !important;
+.agenda_grid_header_day,
+.navTitle {
+    color: #fff !important
 }
 
-.agenda_grid_header_day {
-    color: white !important;
-}
-
+.border.centerxy,
 .navigationContainer {
-    background-color: #2f3136 !important;
-}
-
-.hasDatepicker {
-    background-color: #2f3136;
+    background-color: #2f3136 !important
 }
 
 .hasDatepicker:hover {
-    color: #7289da;
+    color: #7289da
 }
 
+.border.centery.topy,
+.hasDatepicker,
+body {
+    background-color: #2f3136
+}
+
+.border,
+.border.centerxy,
 .border.centery.topy {
-    background-color: #2f3136;
-    background-image: none;
-}
-
-.border {
-    background-image: none;
+    background-image: none
 }
 
 .border.centerxy {
-    background-image: none;
-    border: none;
+    border: 0
 }
 
 .border.centery.bottomy {
     background-color: #2f3136;
-    border: none;
+    border: 0
 }
 
-body {
-    background-color: #2f3136;
-}
-
-/*Fotoalbum*/
 .category a {
-    color: white;
+    color: #fff
 }
 
 .nav a {
-    color: white !important;
-}
-
-.nav a:hover {
-    color: #7289da !important;
-    text-decoration: none !important;
-}
-
-.category a:hover {
-    color: #7289da;
-    text-decoration: none;
+    color: #fff !important
 }
 
 .nav {
     background: #202225 !important;
-    border: #202225 !important;
+    border: #202225 !important
 }
 
 .album_title {
     background: #5c80ff !important;
-    border: #5c80ff !important;
+    border: #5c80ff !important
 }
 
-/*studentcard*/
-.smscBlockContainer_top,
 .smscBlockContainer_left,
-.smscBlockContainer_right {
-    border-color: white !important;
+.smscBlockContainer_right,
+.smscBlockContainer_top {
+    border-color: #fff !important;
     background-color: #2f3136;
-    box-shadow: none;
+    box-shadow: none
 }
 
 .studentcard_block.loading {
-    background-image: none !important;
+    background-image: none !important
 }
 
 .profile_header_pupilinfo_status {
-    color: grey !important;
+    color: gray !important
 }
 
 .titleLeft,
 .titleRight {
     background-color: #2f3136 !important;
-    color: white !important;
-    border: none !important;
+    color: #fff !important;
+    border: 0 !important
 }
 
+.breadcrumb_url a:hover,
+.lvsitem_title:hover,
+.message_sender:hover,
 .titleRight:hover {
-    color: #7289da !important;
+    color: #7289da !important
 }
 
-.message_sender:hover {
-    color: #7289da !important;
-}
-
-.lvsitem_title:hover {
-    color: #7289da !important;
-}
-
-/*courses*/
+.loading ins,
+.msgInfoMsg p a img,
 .nav_loading_layer {
-    display: none !important;
-}
-
-.loading ins {
-    display: none !important;
+    display: none !important
 }
 
 .last .loading {
-    background-image: none !important;
+    background-image: none !important
 }
 
-.smsc-column-nav__button--news {
-    background-image: url("https://svgshare.com/i/RdB.svg") !important;
-    background-size: 28px !important;
+.smsc-column-nav__button--news,
+.smsc_cm_no_items#nownews {
+    background-image: url(https://svgshare.com/i/RdB.svg) !important;
+    background-size: 28px !important
 }
 
-.fileinfowhite,
-.fileinfogrey,
-.fileuploadblock,
 .correctioninfo,
-.isnew {
-    background-color: var(--medium-grey) !important;
+.fileinfogrey,
+.fileinfowhite,
+.fileuploadblock,
+.isnew,
+.profile_keyring_formfield_value input {
+    background-color: var(--medium-grey) !important
 }
 
 .fileimg img {
-    visibility: hidden !important;
+    visibility: hidden !important
 }
 
 .fileimg {
-    background-image: url("https://svgshare.com/i/Rdv.svg") !important;
-    background-size: 16px !important;
+    background-image: url(https://svgshare.com/i/Rdv.svg) !important;
+    background-size: 16px !important
 }
 
 .uploadtitle {
-    color: white !important;
+    color: #fff !important
 }
 
 .htbluelink {
-    text-decoration: none !important;
+    text-decoration: none !important
 }
 
 .smsc_cm_body_row_block_desc {
-    color: grey !important;
+    color: gray !important
 }
 
 .smscleftnavcontainer {
     background-color: var(--medium-grey) !important;
-    border-color: white !important;
-    box-shadow: none !important;
+    border-color: #fff !important;
+    box-shadow: none !important
 }
 
 .smsc_cm_no_items#nownews {
-    background-image: url("https://svgshare.com/i/RdB.svg") !important;
-    background-size: 64px !important;
+    background-size: 64px !important
 }
 
 .smsc-column-nav__button {
-    color: white !important;
+    color: #fff !important
 }
 
 .smsc-column-nav__button:hover {
     background-color: #202225 !important;
-    border: none !important;
-    color: white !important;
+    border: 0 !important;
+    color: #fff !important
 }
 
-.smsc_cm_link {
-    color: white;
-}
-
-.breadcrumb_url a {
-    color: white;
-}
-
-.breadcrumb_url a:hover {
-    color: #7289da !important;
-}
-
-.uploadzone.margin-top--milli tbody tr td {
-    background: none;
+.breadcrumb_url a,
+.smsc_cm_link,
+.treecollapse a {
+    color: #fff
 }
 
 .treecollapse {
-    background-image: none;
-}
-
-.treecollapse a {
-    color: white;
+    background-image: none
 }
 
 .treecollapse a:hover {
-    color: #7289da;
+    color: #7289da
 }
 
+#manual_searchbox,
 .smscFrameTitleContainer {
-    background-color: #2f3136 !important;
+    background-color: #2f3136 !important
 }
 
-.icon-label--16 {
-    color: #7289da !important;
+.icon-label--16,
+.smsc-dropzone--ellipsis:hover {
+    color: #7289da !important
 }
 
-/*Handleiding*/
 .plugin_note {
-    background-color: var(--green) !important;
-}
-
-#manual_searchbox {
-    background-color: #2f3136 !important;
+    background-color: var(--green) !important
 }
 
 .manual_widgettitle {
-    background: #202225 !important;
-    color: white !important;
-}
-
-.manual_widgettitleinner {
-    color: white !important;
-}
-
-.gridview__container {
-    background-color: #202225 !important;
-}
-
-.manual_widget_href_selectbox {
-    background-color: #202225 !important;
-}
-
-.manual_widgetcontent {
-    background-color: #202225 !important;
+    background: #202225 !important
 }
 
 .kenniscontent h1,
+.manual_widgettitle,
+.manual_widgettitleinner,
 h2,
 h3,
 h4,
 h5,
 h6,
 span {
-    color: white !important;
+    color: #fff !important
 }
 
+.gridview__container,
+.manual_widget_href_selectbox,
+.manual_widgetcontent,
 .smscselect_dropdown {
-    background-color: #202225 !important;
+    background-color: #202225 !important
 }
 
 .smscselect_dropdown_item.selected::before {
-    background-image: url("https://sjs.smartschool.be/smsc/img/check_tiny_white/check_tiny_white_8x8.png") !important;
+    background-image: url(https://sjs.smartschool.be/smsc/img/check_tiny_white/check_tiny_white_8x8.png) !important
 }
 
-.li {
-    color: white !important;
+.li,
+.searchSubTitle,
+.searchTitle,
+.ssLink.smscButton:hover {
+    color: #fff !important
 }
 
-.searchTitle {
-    color: white !important;
+.searchSubTitle span,
+.tabs .current span {
+    background: 0 0 !important
 }
 
-.searchSubTitle {
-    color: white !important;
-}
-
-.searchSubTitle span {
-    background: none !important;
-}
-
-/*documents*/
 .mydoc__trash-warning-container__label {
-    color: #f04747 !important;
+    color: #f04747 !important
 }
 
 .smsc-dropzone--ellipsis {
-    font-weight: bold !important;
+    font-weight: 700 !important
 }
 
-.smsc-dropzone--ellipsis:hover {
-    color: #7289da !important;
-}
-
-/*Profile*/
-.profile_keyring_formfield_value input {
-    background-color: var(--medium-grey) !important;
-}
-
-.readonly label:hover,
+.disabled,
 .readonly,
-.disabled {
+.readonly label:hover {
     cursor: not-allowed !important;
-    color: white !important;
+    color: #fff !important
 }
 
 .center {
-    background-color: var(--light-grey) !important;
+    background-color: var(--light-grey) !important
+}
+
+.textfield,
+.warning_row {
+    border-color: #fff !important
 }
 
 .warning_row {
     background-color: var(--light-dark-grey) !important;
-    color: white !important;
-    border-color: white !important;
-}
-
-.ssLink.smscButton:hover {
-    color: white !important;
+    color: #fff !important
 }
 
 .textfield {
-    background-color: #2f3136 !important;
-    border-color: white !important;
+    background-color: #2f3136 !important
 }
 
 .notifyScreenTitle {
-    color: white;
+    color: #fff
 }
 
-.notifyScreenEventOptionLine.cf:hover {
-    background-color: #2f3136 !important;
-}
-
+.notifyScreenEventOptionLine.cf:hover,
 .oauth_item_row:hover {
-    background-color: #2f3136 !important;
+    background-color: #2f3136 !important
 }
 
-/*news*/
 .newsGroupTitle {
-    background-image: url("https://svgshare.com/i/RbG.svg") !important;
-    /*red*/
+    background-image: url(https://svgshare.com/i/RbG.svg) !important
 }
 
-.newsGroupTitleRow {
-    background-color: var(--medium-grey) !important;
-}
-
-.groupContainer {
-    background-color: var(--medium-grey) !important;
-}
-
+.groupContainer,
+.groupTree,
+.newsGroupTitleRow,
 .newsTitle {
-    background-color: var(--medium-grey) !important;
-}
-
-.groupTree {
-    background-color: var(--medium-grey) !important;
+    background-color: var(--medium-grey) !important
 }
 
 .msgInfoTitle {
-    color: white !important;
+    color: #fff !important
 }
 
 .msgInfoAuthor {
-    color: grey !important;
+    color: gray !important
 }
 
 .msgInfoSpacer {
     background-image: none !important;
-    border-bottom: 2px solid #202225 !important;
+    border-bottom: 2px solid #202225 !important
 }
 
-.msgInfoMsg p a img {
-    display: none !important;
-}
-
-.next .icon {
-    background-image: url("https://svgshare.com/i/Rbt.svg") !important;
-    background-size: 48px !important;
+.next .icon,
+.prev .icon {
+    background-image: url(https://svgshare.com/i/Rbt.svg) !important;
+    background-size: 48px !important
 }
 
 .prev .icon {
-    background-image: url("https://svgshare.com/i/RbK.svg") !important;
-    background-size: 48px !important;
+    background-image: url(https://svgshare.com/i/RbK.svg) !important
 }
 
+.resize-handle,
 .toolbar,
-.toolbar-buttons div,
-.resize-handle {
-    border: none !important;
+.toolbar-buttons div {
+    border: 0 !important
 }
 
-/*notifications*/
+.notification__info:hover,
 .notification__title:hover {
-    color: white !important;
+    color: #fff !important
 }
 
-.notification__info:hover {
-    color: white !important;
-}
-
-/*calender*/
-.toolbar-top,
+.calendarDivActive,
 .toolbar-bottom,
-.calendarDivActive {
-    display: none !important;
+.toolbar-top {
+    display: none !important
 }
 
-.propertyButton {
+.propertyButton,
+.propertyButton_hover {
     background-color: var(--medium-grey) !important;
-    background-image: none !important;
+    background-image: none !important
 }
 
 .propertyButton_hover {
-    background-image: none !important;
-    background-color: var(--darkest-grey) !important;
+    background-color: var(--darkest-grey) !important
 }
 
 .propertyButtonImg_noPointer:hover {
-    background-color: var(--medium-grey) !important;
+    background-color: var(--medium-grey) !important
 }
 
 .ssLoadingLayerImage {
-    background-image: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") !important;
+    background-image: url(https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif) !important
 }
 
 .dpHeader {
-    color: white !important;
+    color: #fff !important
 }
 
-.dayBlock,
-.bold {
-    color: grey !important;
+.bold,
+.dayBlock {
+    color: gray !important
 }
 
 .inputForm_main600x550 {
-    background-image: none !important;
-    background-color: var(--medium-grey) !important;
+    background-image: none !important
 }
 
-.contentContainer {
-    background-color: var(--medium-grey) !important;
+.ccBackgr,
+.contentContainer,
+.inputForm_main600x550 {
+    background-color: var(--medium-grey) !important
 }
 
-.ccBackgr {
-    background-color: var(--medium-grey) !important;
-}
-
-/*oauth*/
 .splashscreen__dialog {
     background-color: #2f3136 !important;
-    border-top: 1rem solid #2f3136 !important;
+    border-top: 1rem solid #2f3136 !important
 }
 
 .float-label__input {
-    background-color: var(--medium-grey) !important;
+    background-color: var(--medium-grey) !important
 }
