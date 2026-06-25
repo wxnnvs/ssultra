@@ -25,3 +25,13 @@ Built by [Wannes](https://wannesg.be) for the [Smartschool Ultra](https://discor
 ### other option:
 
 run `build.sh` from root of the project
+
+---
+
+### Todo:
+- [x] Implement dark theme
+- [ ] Fix visual bugs in dark theme
+- [ ] Add theme customization (accent colors, background image, ...)
+- [ ] Add automatic accent colors based on background image
+- [ ] Small games (tetris, snake, pong, breakout, ...)
+- [ ] ... ?
