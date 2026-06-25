@@ -201,7 +201,7 @@ a {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
-    background-image: url("https://xinix.space/darkschool/logo.png") !important;
+    /* background-image: url("https://xinix.space/darkschool/logo.png") !important; */
     margin: 0px 0px 30px 0px;
 }
 
@@ -260,7 +260,7 @@ a.smscButton span {
 /*Start*/
 
 .topnav-menu-overlay {
-    z-index: 1;
+    z-index: 1 !important;
 }
 
 .topnav {
@@ -278,6 +278,14 @@ a.smscButton span {
 
 .profile-blocks.js-profile-blocks {
     display: none !important;
+}
+
+.showLeftNav {
+    background: none !important;
+}
+
+.empty-state__container {
+    background: none !important;
 }
 
 .course-ico {
@@ -396,6 +404,10 @@ homepage__center {
 .smsc-topnav .topnav__menu {
     background-color: #2e3338;
     border: 1px solid #2f3136;
+}
+
+.topnav__menu {
+    background-color: var(--medium-grey) !important;
 }
 
 body.modern-ui .homepage__block:not(:last-child) {
@@ -628,6 +640,7 @@ a.course__block.course__image:hover {
     display: none;
 }
 
+/* todo change image */
 #centercontainer::after {
     padding: 220px 250px;
     margin: 0;
@@ -637,7 +650,7 @@ a.course__block.course__image:hover {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    content: url('https://xinix.space/assets/logo_nobg.png');
+    /* content: url('https://xinix.space/assets/logo_nobg.png'); */
     white-space: pre-wrap;
 }
 
@@ -816,7 +829,7 @@ quickreply-menu {
 }
 
 a.topnav__menuitem:hover {
-    background-color: var(--medium-grey) !important;
+    background-color: var(--darkest-grey) !important;
     border-color: #202225 !important;
     color: white !important;
 }
@@ -1043,6 +1056,11 @@ svg {
 
 .js-focus-visible.modern-ui {
     background-color: #2f3136;
+    box-shadow: none !important;
+}
+
+.focus-visible {
+    box-shadow: none !important;
 }
 
 .add-btn {
@@ -1130,14 +1148,9 @@ svg {
     padding-left: 52px;
 }
 
-#msgdetail p img {
-    display: block;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: url("https://i.ibb.co/1Z9BXm0/Rolling-1s-52px.gif") no-repeat;
-    width: 52px;
-    height: 52px;
-    padding-left: 52px;
+
+.modern-message--selected {
+    background-color: var(--darkest-grey) !important;
 }
 
 #loadingLayer img {
