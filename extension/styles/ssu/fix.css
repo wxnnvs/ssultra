@@ -1,6 +1,3 @@
-/* taken and adapted from https://userstyles.world/style/7713/the-darkschool-project */
-/* optimized by CSSO */
-
 :root {
     --green: #43b581;
     --blue: #7289da;
@@ -10,7 +7,9 @@
     --light-dark-grey: #292c2e;
     --purple-blue: #5c87ff;
     --light-green: #67db4d;
-    --light-blue: #2a9df4
+    --light-blue: #2a9df4;
+    --dark-yellow: #d3ab0d;
+    --ultra-dark-yellow: #b38f00
 }
 
 ::selection {
@@ -141,8 +140,6 @@ a.smscButton span {
     color: #fff
 }
 
-a {}
-
 .login-app__link--password {
     color: #000
 }
@@ -214,7 +211,8 @@ a {}
 
 .topnav {
     z-index: 1;
-    position: relative
+    position: relative;
+    background-color: var(--light-dark-grey) !important
 }
 
 .empty-state__container,
@@ -315,7 +313,7 @@ homepage__center {
 
 .modern-ui .smsc-topnav .topnav,
 .smsc-topnav .topnav {
-    background: var(--dark-grey) !important
+    background: var(--light-dark-grey) !important
 }
 
 .smsc-topnav .topnav__menu {
@@ -353,8 +351,8 @@ body.modern-ui .homepage__center {
 
 .smscButton {
     background: #7289da !important;
-    border-color: #7289da !important;
-    color: #fff !important
+    color: #fff !important;
+    border: 0 !important
 }
 
 .modern-ui .smscButton:hover:not([disabled]) {
@@ -457,15 +455,12 @@ a.course__block.course__image:hover {
     border-color: #7289da !important
 }
 
+.course-link.hlp-vert-box:hover,
+.modern-message:hover,
 .modern-ui .modern-message--selected,
 .modern-ui .modern-message--selected:hover,
 .smsc-dropzone--init {
-    background-color: #202225
-}
-
-.course-link.hlp-vert-box:hover,
-.modern-message:hover {
-    background-color: #202225 !important
+    background-color: var(--light-dark-grey) !important
 }
 
 .course-link.hlp-vert-box:hover {
@@ -629,12 +624,21 @@ quickreply-menu {
 .coursesbutton,
 .js-notifs-settingsbtn {
     background-color: #7289da !important;
-    border-color: #7289da !important
+    border: 0
+}
+
+.js-notifs-settingsbtn:hover {
+    background-color: #5768a5 !important;
+    color: #fff !important
 }
 
 .js-notifs-clearbtn {
     background-color: #f04747 !important;
-    border-color: #f04747 !important
+    border: 0
+}
+
+.js-notifs-clearbtn:hover {
+    background-color: #b13636 !important
 }
 
 a.topnav__menuitem:hover {
@@ -1416,6 +1420,10 @@ body {
     background-size: 28px !important
 }
 
+.smsc_cm_no_items#nownews {
+    background-size: 64px !important
+}
+
 .correctioninfo,
 .fileinfogrey,
 .fileinfowhite,
@@ -1450,10 +1458,6 @@ body {
     background-color: var(--medium-grey) !important;
     border-color: #fff !important;
     box-shadow: none !important
-}
-
-.smsc_cm_no_items#nownews {
-    background-size: 64px !important
 }
 
 .smsc-column-nav__button {
@@ -1562,17 +1566,14 @@ span {
     color: #fff !important
 }
 
+.notifyScreenEventOptionLine.cf:hover,
+.oauth_item_row:hover,
 .textfield {
     background-color: #2f3136 !important
 }
 
 .notifyScreenTitle {
     color: #fff
-}
-
-.notifyScreenEventOptionLine.cf:hover,
-.oauth_item_row:hover {
-    background-color: #2f3136 !important
 }
 
 .newsGroupTitle {
@@ -1670,4 +1671,91 @@ span {
 
 .float-label__input {
     background-color: var(--medium-grey) !important
+}
+
+.header__day.highlight,
+.header__day:hover {
+    background-color: var(--light-dark-grey) !important
+}
+
+.header__day--today,
+.optionWrapper-IEDUX[data-selected=true],
+.optionWrapper-IEDUX[data-selected=true]::after,
+.optionWrapper-IEDUX[data-selected=true]::before {
+    background-color: var(--blue) !important
+}
+
+.highlight {
+    background-color: rgba(0, 0, 0, .5) !important
+}
+
+.sidebar-print {
+    background-color: var(--light-dark-grey) !important
+}
+
+.selectview {
+    background-color: var(--blue) !important;
+    border: 0 !important
+}
+
+#search,
+.planner-header-search-input {
+    background-color: var(--darkest-grey) !important
+}
+
+.keyIcon-aoeax {
+    background-color: #666 !important;
+    color: #fff !important;
+    border: 0 !important
+}
+
+[class*=warning],
+[class*=warning]:hover {
+    background-color: var(--dark-yellow) !important;
+    color: #fff !important;
+    border: 0 !important
+}
+
+[class*=warning]:hover {
+    background-color: var(--ultra-dark-yellow) !important
+}
+
+.todoRow-sOF6J:hover {
+    background-color: var(--light-dark-grey) !important
+}
+
+.tox-editor-container {
+    background-color: var(--medium-grey) !important;
+    border: 0 !important
+}
+
+.blob--counter,
+.mbselected {
+    background-color: var(--blue) !important;
+    color: #fff !important;
+    border: 0 !important
+}
+
+.mbselected {
+    background-color: var(--darkest-grey) !important
+}
+
+.mbnotselected {
+    background-color: var(--medium-grey) !important;
+    background-image: none !important;
+    border: 0 !important
+}
+
+.mbnotselected,
+.mce-content-body,
+.tox .tox-toolbar {
+    color: #fff !important
+}
+
+.tox .tox-toolbar {
+    background: var(--light-dark-grey) !important
+}
+
+.user_row_image {
+    border: 0 !important
 }
