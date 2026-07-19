@@ -28,6 +28,17 @@ run `build.sh` from root of the project
 
 ---
 
+### Licensing
+
+- Code in this repository is licensed under **GNU GPLv3** (`/LICENSE`).
+- Style assets in `/extension/styles/ssu` are licensed under
+  **CC BY-NC 4.0** (`/LICENSES/CC-BY-NC-4.0.txt` and `/extension/styles/LICENSE`).
+- The CC BY-NC 4.0 style assets include a **NonCommercial** restriction; commercial
+  use of those assets is not permitted under that license.
+- Attribution details and modification notes for style sources are in `/NOTICE`.
+
+---
+
 ### Todo:
 - [x] Implement dark theme
 - [ ] Fix visual bugs in dark theme

@@ -1,0 +1,15 @@
+License coverage for /extension/styles
+
+Unless otherwise noted, files in /extension/styles/ssu are licensed under:
+- Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+- SPDX: CC-BY-NC-4.0
+- Full text/reference: /LICENSES/CC-BY-NC-4.0.txt
+
+Covered files currently include:
+- /extension/styles/ssu/main.css
+- /extension/styles/ssu/fix.css
+- /extension/styles/ssu/fix.css.bak
+
+Attribution:
+- https://userstyles.world/style/7713/the-darkschool-project
+- See /NOTICE for attribution details and modification statements.
