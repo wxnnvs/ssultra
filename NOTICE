@@ -1,0 +1,25 @@
+Smartschool Ultra - NOTICE
+
+Code in this repository remains licensed under GNU GPLv3 (see /LICENSE),
+except where another license is explicitly stated.
+
+Style assets under /extension/styles/ssu are licensed under:
+- Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+- Full text/reference: /LICENSES/CC-BY-NC-4.0.txt
+
+Attribution for style source(s):
+- Upstream style source: "The Darkschool Project"
+  URL: https://userstyles.world/style/7713/the-darkschool-project
+- Attribution name in existing project docs: Brecht Van Acker Voorspoels
+
+Modifications statement:
+- The style assets in this repository are adapted/modified for Smartschool
+  Ultra integration and include local fixes and overrides.
+
+Non-commercial restriction note:
+- Reuse of the CC BY-NC 4.0 style assets is limited to non-commercial use
+  under CC BY-NC 4.0 terms.
+
+TODO (attribution completeness):
+- Verify and add any additional upstream source URLs if specific style
+  sections originated from sources other than the link above.

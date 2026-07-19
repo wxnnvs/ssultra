@@ -1,0 +1,13 @@
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+Canonical license page:
+https://creativecommons.org/licenses/by-nc/4.0/
+
+Canonical legal code:
+https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+SPDX identifier: CC-BY-NC-4.0
+
+This project uses this canonical reference file layout for third-party style
+asset licensing. See /NOTICE and /extension/styles/LICENSE for coverage and
+attribution details.
