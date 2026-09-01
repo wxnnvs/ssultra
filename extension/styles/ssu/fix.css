@@ -166,7 +166,7 @@ a.smscButton span {
     white-space: pre-wrap
 }
 
-#centercontainer>div.homepage__block,
+/* #centercontainer>div.homepage__block, */
 .login-app__bottom,
 .login-app__title--sign-in-with.login-app__title {
     display: none
@@ -285,16 +285,20 @@ a.smscButton span {
     color: #fff !important
 }
 
-.homepage__block p a img:first-child,
+/* .homepage__block p a img:first-child,
 .newsDialog__center p a img:first-child {
     display: none !important
+} */
+
+.homepage {
+    background-color: #2f3136;
 }
 
-.homepage__right,
+/* .homepage__right,
 .smsc-container--main,
 homepage__center {
     background-color: #2f3136
-}
+} */
 
 .ssLink {
     color: #fff
