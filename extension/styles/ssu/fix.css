@@ -31,7 +31,7 @@ textarea {
 }
 
 .flexwrap,
-.login-app .smscButton:hover,
+/* .login-app .smscButton:hover, */
 body,
 fieldset,
 legend,
@@ -147,7 +147,8 @@ a.smscButton span {
 .login-app__right {
     position: relative;
     margin: auto;
-    box-shadow: none !important
+    box-shadow: none !important;
+    background-color: var(--medium-grey) !important;
 }
 
 .login-app__top {
