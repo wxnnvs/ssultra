@@ -8,8 +8,8 @@ Style assets under /extension/styles/ssu are licensed under:
 - Full text/reference: /LICENSES/CC-BY-NC-4.0.txt
 
 Attribution for style source(s):
-- Upstream style source: "The Darkschool Project"
-  URL: https://userstyles.world/style/7713/the-darkschool-project
+- Upstream style source:
+  URL: https://userstyles.org/styles/191733/smartschool-dark-mode
 - Attribution name in existing project docs: Brecht Van Acker Voorspoels
 
 Modifications statement:
@@ -19,7 +19,3 @@ Modifications statement:
 Non-commercial restriction note:
 - Reuse of the CC BY-NC 4.0 style assets is limited to non-commercial use
   under CC BY-NC 4.0 terms.
-
-TODO (attribution completeness):
-- Verify and add any additional upstream source URLs if specific style
-  sections originated from sources other than the link above.
